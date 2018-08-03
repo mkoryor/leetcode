@@ -44,6 +44,6 @@ class Solution:
  
  
  
-#test_case: 121
-#result: True
+#test_case: -121
+#result: False
 
