@@ -5,7 +5,7 @@
 
 Write a function to find the longest common prefix string amongst an array of strings.
 
-If there is no common prefix, return an empty string "".
+if there is no common prefix, return an empty string "".
 
 Example 1:
 
@@ -36,8 +36,8 @@ class Solution:
         first = min(strs)
         second = max(strs)
         
-        for index, letter in enumerate(first): # gives string there indexes for example in "first" (0, f), (1, i).....exc
-            if letter != second[index]:  # check if letter is equal to max(wordletter)
+        for index, letter in enumerate(first): # gives string there indexes for example in "first" (0, f), (1, i).....exc 
+            if letter != second[index]:  # check if letter is equal to max(wordletter) 
                 return first[0:index] 
                 
         return first 
