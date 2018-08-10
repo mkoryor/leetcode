@@ -38,7 +38,7 @@ class Solution:
         while x > 0:
             remain = x % 10 # use modulo to make the remainder an exact integer
             reverse = (reverse * 10) + remain
-            x = x // 10 # floor the num to be an exact integer
+            x = x // 10  #floor the num to be an exact integer
             
         if num < 0:
             reverse = -reverse
