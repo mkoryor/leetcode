@@ -18,8 +18,8 @@ return [0, 1]
 
 class Solution:
      """
-     i = [0, 1, 2]
-     j = [1, 2, 3]
+     i = [0, 1, 2, 5]
+     j = [1, 2, 3, 4]
      
      iterates through list and returns index i, j
      """
