@@ -36,7 +36,7 @@ class Solution:
         first = min(strs)
         second = max(strs)
         
-        for index, letter in enumerate(first): # gives string there indexes for example in "first" (0, f), (1, i).....exc 
+        for index, letter in enumerate(first): # Gives string there indexes for example in "first" (0, f), (1, i).....exc 
             if letter != second[index]:  # check if letter is equal to max(wordletter) 
                 return first[0:index] 
                 
