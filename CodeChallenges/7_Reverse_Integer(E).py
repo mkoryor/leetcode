@@ -47,8 +47,8 @@ class Solution:
         return reverse
         
         
-#test_case: 123
-#result: 321
+#test_case: 222
+#result: 222
         
         
 
