@@ -43,24 +43,26 @@ class Solution:
 
 
         def isValid(s):
-
-        brackets = {'[': ']', '{' : '}', '( ' : ')'}
-    
-        new_list = {}
-        left = [left for left in brackets]
-        right = [right for right in brackets]
-
-
-        for char in s:
-            if left in brackets.items():
-                new_list.append(brackets[left])
-            elif char not in new_list or char != new_list.pop():
-                return True
-        return new_list
-
-    
-
-
+        
+        brack = []
+        
+        for i in range(len(s)):
+            if s[i] == '(' or s[i] == '[' or s[i] == '{':
+                brack.append(s[i])
+            if s[i] == ')':
+                if brack == [] or brack.pop() != '(':
+                    return False
+            if s[i] == ']':
+                if brack == [] or brack.pop() != '[':
+                    return False
+            if s[i] == '}':
+                if brack == [] or brack.pop() != '{':
+                    return False
+        if brack:
+            return False
+        else:
+            return True
+                
         
 
         
