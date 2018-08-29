@@ -42,26 +42,25 @@ class Solution:
 
 
 
-        left = ['(','{','[']
+        def isValid(s):
 
-        right = [')','}',']']
+        brackets = {'[': ']', '{' : '}', '( ' : ')'}
+    
+        new_list = {}
+        left = [left for left in brackets]
+        right = [right for right in brackets]
 
 
+        for char in s:
+            if left in brackets.items():
+                new_list.append(brackets[left])
+            elif char not in new_list or char != new_list.pop():
+                return True
+        return new_list
 
-        for i in range(len(left)):
+    
 
-            for j in range(len(right)):
 
-                if (left[i] == '(' and right[i] == ')') or (left[i] == '{' and right[i] == '}') or (left[i] == '[' and right[i] == ']'):
-
-                    new = ''.join(left + right)
-
-        if new == True:
-
-            return True
-
-        else:
-
-            return False
+        
 
         
