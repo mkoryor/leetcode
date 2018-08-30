@@ -7,15 +7,15 @@ Given array nums = [-1, 2, 1, -4], and target = 1.
 The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
 Seen this question in a real interview before?  
 Difficulty:Medium
-Total Accepted:196.1K
-Total Submissions:604.4K
+Total Accepted:196.1 K
+Total Submissions:604.4 K
 Contributor:LeetCode
 Subscribe to see which companies asked this question.
 
 Related Topics 
 
 Similar Questions 
-3Sum3Sum Smaller
+3 Sum3 Sum Smaller
 Python3	
 
 class Solution:
