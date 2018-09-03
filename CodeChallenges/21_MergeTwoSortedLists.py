@@ -29,9 +29,7 @@ class Solution:
         if l1 is None:
 
             return l2
-
         
-
         if l2 is None:
 
             return l1
@@ -42,10 +40,7 @@ class Solution:
 
             temp = l1
 
-            
-
-            
-
+           
             temp.next = mergeTwoLists(l1.next, l2)
        
         else:
