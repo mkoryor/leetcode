@@ -21,19 +21,7 @@ class Solution:
         :rtype: int
         """
         
-        fact = 1
-        while (n > 0):
-            fact = fact * n
-            n = n - 1
-        
-        new = str(fact)
-        
-        length = len(new)
-        count = 0
-        
-        for i in range(length, -1, -1):
-            if new[-i] == '0':
-                count = count + 1
-        return count
+        new = str(n)
+        return new.count('0') - new.rstrip('0').count('0')
             
         
